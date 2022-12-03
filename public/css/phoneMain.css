@@ -1,0 +1,263 @@
+
+.navbar {
+    width: 100%;
+    position: sticky;
+    top: 1vw;
+    z-index: 1;
+    /* right: 2vw; */
+    left: 51vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.midContainer {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.midMain {
+    height: 280%;
+    /* border: 2px solid; */
+    width: 100vw;
+}
+.invert {
+    width: 145px;
+    height: 40px;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 2vw;
+    filter: contrast(0.5);
+    cursor: pointer;
+}
+.line {
+    width: 100%;
+    height: 10%;
+    background: rgb(143, 142, 142);
+}
+
+.navbar ul li {
+    width: 12.5vw;
+    height: 12.5vw;
+    margin: 0px 5vw;
+}
+
+.midContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.leftContainer{
+    display: none;
+}
+.rightContainer{
+    display: none;
+}
+
+/* Home page ----  */
+#intro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 9vw 0vw;
+}
+.introInner .img {
+    height: 60vw;
+    margin: 10vw 0vw;
+    width: 60vw;
+}
+.introInner {
+    flex-direction: column;
+}
+.msg {
+    width: 90%;
+    margin: 10vw 0vw;
+}
+.letters {
+    font-size: 12vw;
+    width: 68%;
+    font-weight: bolder;
+    display: flex;
+}
+.letters2 {
+    font-size: 12vw;
+    width: 100%;
+    font-weight: bolder;
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+.hi {
+    font-size: 7vw;
+    text-align: left;
+    width: 90%;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.normal {
+    width: 100%;
+    color: darkgray;
+    font-size: 4.3vw;
+    letter-spacing: 0.2vw;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 1vw;
+}
+
+/* Skills ------  */
+#skills {
+    height: 28%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.skillsInner h1 {
+    font-size: 10vw;
+}
+.skill {
+    width: 42vw;
+    height: 42vw;
+    margin: 1vw 2vw;
+    display: inline-block;
+}
+.skl img {
+    width: 25.5vw;
+    margin-bottom: 1vw;
+}
+.projectsInner {
+    width: 100%;
+    height: 100%;
+    margin-top: 40vw;
+}
+.projectsInner h1 {
+    margin-right: 6vw;
+    font-size: 10vw;
+}
+.projectBox {
+    width: 100%;
+    margin-left: 0vw;
+    overflow-x: scroll;
+}
+.scrlProj{
+    width: 67vw;
+}
+.scrl div {
+    height: 1.2vw;
+    width: 4.6vw;
+    border-radius: 27%;
+    background: #d41111;
+    /* box-shadow: 0px 0px 1px 1px #00fafa; */
+    transition: all 0.5s ease-in-out;
+}
+.projectContent {
+    display: inline-block;
+    /* margin: 0vw 7vw; */
+    width: inherit;
+    display: inline-block;
+    width: 88vw;
+    height: 79vw;
+    z-index: 1;
+    margin: 0vw 10vw;
+}
+/* .proInner {
+    margin: 4vw 17vw;
+    width: 24%;
+    height: 70%;
+} */ 
+/* .projects{
+    margin: 14vw 0;
+} */
+.buttons{
+    display: none;
+}
+.projectSlide {
+    display: flex;
+    /* width: 300%; */
+    height: 76%;
+    margin: 20vw 0vw;
+}
+.proInfo h2 {
+    font-size: 9vw;
+}
+.proImg {
+    height: 40%;
+    margin: 10vw 0vw;
+}
+
+
+/* footer -----  */
+footer {
+    width: 6vw;
+    height: 20vw;
+    position: sticky;
+    /* left: -15vw; */
+    top: 75vh;
+    right: 9vw;
+}
+.footer-click {
+    list-style: none;
+    width: 4vw;
+    height: 4vw;
+    /* border: 2px solid red; */
+    margin: 1vw 0px;
+    overflow: hidden;
+    border: 1.5px solid #93ff2b;
+    transition: all 0.5s ease-in-out;
+}
+.footer {
+    list-style: none;
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 3vw 0px;
+    overflow: hidden;
+    transform: rotate(45deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.resumeCont img {
+    width: 90%;
+    height: 50%;
+    z-index: 2;
+
+}
+.resumeCont p {
+    z-index: 2;
+    font-size: 75px;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.resumeCont {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 2;
+}
+
+.resumeCont img {
+    width: 90%;
+    height: 80%;
+    z-index: 2;
+}
+.resumeCont p {
+    z-index: 2;
+    font-size: 75px;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.display{
+    display: none;
+}

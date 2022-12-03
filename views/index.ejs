@@ -1,0 +1,76 @@
+
+<%- include("partials/header") %> 
+
+    <div id="resumeCon" class="resumeCont display">
+        <img src="/img/resumeMj.jpg" alt="">
+        <a id="resumeD"><p>⨯</p></a>
+    </div>
+
+    <div class="container">
+        <div class="leftContainer">
+            <div class="logo">
+                <a href="/"><img src="/img/mjlogo.png" alt=""></a>
+            </div>
+            <div id="socials">
+                <h3>Socials -</h3>
+                <div id="instagram" class="social">
+                    <a href="https://www.instagram.com/insane_boi_mj_/">
+                        <img src="/img/instagram.png" alt=""> <p>@insane_boi_mj_</p>
+                    </a>
+                </div>
+                <div id="faceBook" class="social fb">
+                    <a href="https://www.facebook.com/meghsham.jade/">
+                        <img src="/img/facebook.png" alt=""> <p>Meghsham Jade</p>
+                    </a>
+                </div>
+                <div id="discord" class="social discord">
+                    <a href="https://discord.gg/mFYaPHj6">
+                        <img src="/img/discord.png" alt=""> <p>ÆRÉS#9264</p>
+                    </a>
+                </div>
+                <div id="twitter" class="social twt">
+                    <a href="https://twitter.com/Meghsham6">
+                        <img src="/img/twitter.png" alt=""> <p>@Meghsham6</p>
+                    </a>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="deg">
+                    Pune : 23.5°
+                </div>
+                <div class="des">
+                    scattered clouds <img src="/img/mjlogo.png" alt="">
+                </div>
+            </div>
+            <div class="downScrollL">
+                <marquee behavior="" direction="right" class="scroll">scroll---></marquee>
+            </div>
+        </div>
+        <!-- Mid container starts here --- -->
+        <%- include("partials/mid") %> 
+        <!-- Right container starts from here ---  -->
+        <div class="rightContainer">
+            <div class="downScrollR">
+                <marquee behavior="" direction="right" class="scroll">scroll---></marquee>
+            </div>
+            <div class="dateTime">
+                <div id="date" class="date">
+                    none
+                </div>
+                <div id="time" class="time">
+                    10:58:32pm
+                </div>
+            </div>
+            <div class="comments">
+                <div class="login">
+                    <h3>Login to see comments </h3>
+                    <div class="btn">
+                        <form action="/register" method="get">
+                            <marquee behavior="" direction="right">→</marquee><button id="login">login</button><marquee behavior="" direction="left" > ← </marquee>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <%- include("partials/footer") %> 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" media="screen and (max-width:630px)" href="/css/loginphone.css">
+
+</head>
+
+<body>
+    <div class="loginContainer">
+        <h1>Login</h1>
+        <form action="/login" method="post">
+            <input type="text" class="focus" name="username" placeholder="Enter Username" required>
+            <input type="password" class="focus" name="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="ask">
+            <a href="/login">
+                <div>Login</div>
+            </a>
+            <a href="/register">
+                <div>Register</div>
+            </a>
+        </div>
+        <div class="auth">
+            <a class="btn  btn-social btn-google btn-block log" href="/auth/google" role="button">
+                <i class="fab fa-google"></i>
+                Sign In with Google
+            </a>
+            <a class="btn btn-social btn-github btn-block log" href="/auth/github" role="button">
+                <i class="fab fa-github"></i>
+                Sign In with GitHub
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

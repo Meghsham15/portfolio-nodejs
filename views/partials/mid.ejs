@@ -1,0 +1,174 @@
+<div class="midContainer">
+    <div class="midMain">
+        <div class="navbar">
+            
+            <div class="invert">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul>
+                <li><a href="https://github.com/Meghsham15" target="_blank"><img src="/img/github.png" alt="img not found"></a></li>
+                <li><a href="https://www.linkedin.com/in/meghsham-jade-2a3406218/" target="_blank"><img src="/img/linkden.png" alt="img not found"></a></li>
+                <li><a href="mailto:meghshamjade50@gmail.com?subject=Hii"><img src="/img/gmail.png" alt="img not found"></a></li>
+                <li><a ><img id="resume" src="/img/resume.png" alt="img not found"></a></li>
+            </ul>
+        </div>
+        <div id="intro" class="content">
+            <div class="introInner">
+                <div class="msg">
+                    <div class="letters">
+                        <div class="let">
+                            F
+                        </div>
+                        <div class="let">
+                            u
+                        </div>
+                        <div class="let">
+                            l
+                        </div>
+                        <div class="let">
+                            l
+                        </div>
+                        <div class="let">
+                            -
+                        </div>
+                        <div class="let">
+                            S
+                        </div>
+                        <div class="let">
+                            t
+                        </div>
+                        <div class="let">
+                            a
+                        </div>
+                        <div class="let">
+                            c
+                        </div>
+                        <div class="let">
+                            k
+                        </div>
+                    </div>
+                    <div class="letters2">
+                        <div class="let">
+                            W
+                        </div>
+                        <div class="let">
+                            e
+                        </div>
+                        <div class="let">
+                            b
+                        </div>
+                        <div class="let">
+                            -
+                        </div>
+                        <div class="let">
+                            D
+                        </div>
+                        <div class="let">
+                            e
+                        </div>
+                        <div class="let">
+                            v
+                        </div>
+                        <div class="let">
+                            e
+                        </div>
+                        <div class="let">
+                            l
+                        </div>
+                        <div class="let">
+                            o
+                        </div>
+                        <div class="let">
+                            p
+                        </div>
+                        <div class="let">
+                            e
+                        </div>
+                        <div class="let">
+                            r
+                        </div>
+                    </div>
+                    <div class="hi">
+                        Hi,
+                    </div>
+                    <div class="hi">
+                        Myself Meghsham Jade
+                    </div>
+                    <div class="normal">
+                        <h4>Dedicated and efficient full-Stack Web-developer with  intermediate level knowledge of full-stack web-development,OAuth and (mongoDB)database.
+                            Iam very eager to learn new things and currently learning ReactJs for further development.
+                        </h4> 
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="/img/mj.jpg" alt="MJ">
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="content">
+           <div class="skillsInner">
+                <h1>
+                    <div class="let">M</div>
+                    <div class="let">y</div>
+                    <div class="let">-</div>
+                    <div class="let">S</div>
+                    <div class="let">k</div>
+                    <div class="let">i</div>
+                    <div class="let">l</div>
+                    <div class="let">l</div>
+                    <div class="let">s</div>
+                </h1>
+                <% skills.forEach(function(ele){%>
+                    <div class="skill">
+                        <div id=<%= ele.id %> class="skl">
+                            <img class="let" src=<%= ele.img %>  alt="">
+                            <h3><%= ele.name %></h3>
+                        </div>
+                    </div>
+                <%}) %> 
+           </div>
+        </div>
+        <div id="projects" class="content">
+            <div class="projectsInner">
+                <h1>
+                    <div class="let">P</div>
+                    <div class="let">r</div>
+                    <div class="let">o</div>
+                    <div class="let">j</div>
+                    <div class="let">e</div>
+                    <div class="let">c</div>
+                    <div class="let">t</div>
+                    <div class="let">s</div>
+                </h1>
+                <div class="buttons">
+                    <button id="lB"><img class="proButtons" src="/img/left.png" alt="" id="left"></button>
+                    <button id="rB"><img class="proButtons" src="/img/right.png" alt="" id="right"></button>
+                </div>
+                <div class="projectBox">
+                    
+                    <div class="projectSlide">
+                        <% projects.forEach(function(ele){%>
+
+                            <div id=<%= ele.id %>  class="projectContent">
+                                <a target="_blank" href=<%= ele.link %> class="proInner">
+                                    <div class="proImg">
+                                        <img src=<%= ele.img %> alt="">
+                                    </div>
+                                    <div  class="proInfo">
+                                        <h2><%= ele.name %></h2>
+                                    </div>
+                                </a>
+                            </div>
+
+                        <%}) %> 
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
