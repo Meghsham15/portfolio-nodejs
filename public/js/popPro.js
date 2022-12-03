@@ -1,4 +1,4 @@
-const proj = [
+const projects = [
     {
         id: 101,
         link: "https://mj-hotel.azurewebsites.net/",
@@ -25,4 +25,4 @@ const proj = [
     },
 ]
 
-module.exports = proj;
+export default projects;
