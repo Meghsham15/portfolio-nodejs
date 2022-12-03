@@ -39,6 +39,7 @@ body{
 }
 .popMain h3 {
     width: 85%;
+    text-align: center;
     color: rgb(212 212 212);
 }
 .webLink {
