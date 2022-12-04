@@ -1,4 +1,4 @@
-import projects from "./popProjects.js";
+import projects from "./popPro.js";
 let length = projects.length;
 
 for (let i = 0;i<length;i++){

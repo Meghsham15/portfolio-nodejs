@@ -6,7 +6,7 @@ const https = require("https");
 // Importing skills --- 
 const skills = require("./public/js/skills.js");
 // Importing projects --- 
-const projects = require("./public/js/projects.js");
+const projects = require("./public/js/project.js");
 const app = express();
 const mongoose = require("mongoose");
 const passport = require("passport");
