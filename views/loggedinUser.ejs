@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,94 +11,148 @@
     <link rel="stylesheet" href="/css/loggedinUser.css">
     <link rel="stylesheet" media="screen and (max-width:630px)" href="/css/phoneM.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="leftContainer">
-            <div class="logo">
-                <a href="/"><img src="/img/mjlogo.png" alt=""></a>
-            </div>
-            <div id="socials">
-                <h3>Socials -</h3>
-                <div id="instagram" class="social">
-                    <a href="https://www.instagram.com/insane_boi_mj_/">
-                        <img src="/img/instagram.png" alt=""> <p>@insane_boi_mj_</p>
-                    </a>
-                </div>
-                <div id="faceBook" class="social fb">
-                    <a href="https://www.facebook.com/meghsham.jade/">
-                        <img src="/img/facebook.png" alt=""> <p>Meghsham Jade</p>
-                    </a>
-                </div>
-                <div id="discord" class="social discord">
-                    <a href="https://discord.gg/mFYaPHj6">
-                        <img src="/img/discord.png" alt=""> <p>ÆRÉS#9264</p>
-                    </a>
-                </div>
-                <div id="twitter" class="social twt">
-                    <a href="https://twitter.com/Meghsham6">
-                        <img src="/img/twitter.png" alt=""> <p>@Meghsham6</p>
-                    </a>
+
+    <% projects.forEach(function(ele){%>
+        <div id="proPop<%= ele.id %>" class="proPop display">
+            <div class="popMain">
+                <img src=<%=ele.img %> alt="">
+                <h1>
+                    <%= ele.name %>
+                </h1>
+                <h3>
+                    <%= ele.des %>
+                </h3>
+                <div class="webLink">
+                    <h4>Website Link -</h4>
+                    <a target="_blank" href=<%=ele.link %>><%= ele.link %></a>
                 </div>
             </div>
-            <div class="weather">
-                <div class="deg">
-                    Pune : 23.5°
-                </div>
-                <div class="des">
-                    scattered clouds <img src="/img/mjlogo.png" alt="">
-                </div>
-            </div>
-            <div class="downScrollL">
-                <marquee behavior="" direction="right" class="scroll">scroll---></marquee>
-            </div>
+            <a id="proPopB<%= ele.id %>" class="proPopB">
+                <p>⨯</p>
+            </a>
         </div>
+        <%}) %>
 
-        <!-- Mid container starts here --- -->
-        <%- include("partials/mid") %> 
-
-
-        <!-- Right container starts from here ---  -->
-        <div class="rightContainer">
-            <div class="downScrollR">
-                <marquee behavior="" direction="right" class="scroll">scroll---></marquee>
-            </div>
-            <div class="dateTime">
-                <div id="date" class="date">
-                    none
-                </div>
-                <div id="time" class="time">
-                    10:58:32pm
-                </div>
-            </div>
-            <div id="cmt">
-                <h3>Keep the comments Short and Sweet</h3>
-            </div>
-            <div class="comments">
-                <h4>Welcome @<%= userName %> </h4>
-                <form action="/post" method="post">
-                    <input type="hidden" name="userName" value="<%= userName %>">
-                    <textarea name="comment" cols="30" rows="1" required></textarea>
-                    <div id="buttons"><button type="submit">Comment</button><button type="reset">Reset</button></div>
-                </form>
-                <% comments.reverse().forEach(function (content) { %>  
-                <div class="post">
-                    <div class="comment postTable">
-                        <p><%= content.comment %> </p>
-                        <div class="name">@<%= content.name %> </div>
-                    </div>
-                </div>
-                <hr></hr>
-                <% }); %> 
-                
-            </div>
-            <div id="logout">
-                <a href="/logout">
-                    <div class="logout">
-                     Logout
-                    </div>
+            <div id="resumeCon" class="resumeCont display">
+                <img src="/img/resumeMj.jpg" alt="">
+                <a id="resumeD">
+                    <p>⨯</p>
                 </a>
             </div>
-        </div>
-    </div>
 
-    <%- include("partials/footer") %>
+            <div class="container">
+                <div class="leftContainer">
+                    <div class="logo">
+                        <a href="/"><img src="/img/mjlogo.png" alt=""></a>
+                    </div>
+                    <div id="socials">
+                        <h3>Socials -</h3>
+                        <div id="instagram" class="social">
+                            <a href="https://www.instagram.com/insane_boi_mj_/">
+                                <img src="/img/instagram.png" alt="">
+                                <p>@insane_boi_mj_</p>
+                            </a>
+                        </div>
+                        <div id="faceBook" class="social fb">
+                            <a href="https://www.facebook.com/meghsham.jade/">
+                                <img src="/img/facebook.png" alt="">
+                                <p>Meghsham Jade</p>
+                            </a>
+                        </div>
+                        <div id="discord" class="social discord">
+                            <a href="https://discord.gg/mFYaPHj6">
+                                <img src="/img/discord.png" alt="">
+                                <p>ÆRÉS#9264</p>
+                            </a>
+                        </div>
+                        <div id="twitter" class="social twt">
+                            <a href="https://twitter.com/Meghsham6">
+                                <img src="/img/twitter.png" alt="">
+                                <p>@Meghsham6</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="weather">
+                        <div class="deg">
+                            Pune : 23.5°
+                        </div>
+                        <div class="des">
+                            scattered clouds <img src="/img/mjlogo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="downScrollL">
+                        <marquee behavior="" direction="right" class="scroll">scroll---></marquee>
+                    </div>
+                </div>
+
+                <!-- Mid container starts here --- -->
+                <%- include("partials/mid") %>
+
+
+                    <!-- Right container starts from here ---  -->
+                    <div class="rightContainer">
+                        <div class="downScrollR">
+                            <marquee behavior="" direction="right" class="scroll">scroll---></marquee>
+                        </div>
+                        <div class="dateTime">
+                            <div id="date" class="date">
+                                none
+                            </div>
+                            <div id="time" class="time">
+                                10:58:32pm
+                            </div>
+                        </div>
+                        <div id="cmt">
+                            <h3>Keep the comments Short and Sweet</h3>
+                        </div>
+                        <div class="comments">
+                            <h4>Welcome @<%= userName %>
+                            </h4>
+                            <form action="/post" method="post">
+                                <input type="hidden" name="userName" value="<%= userName %>">
+                                <textarea name="comment" cols="30" rows="1" required></textarea>
+                                <div id="buttons"><button type="submit">Comment</button><button
+                                        type="reset">Reset</button></div>
+                            </form>
+                            <% comments.reverse().forEach(function (content) { %>
+                                <div class="post">
+                                    <div class="comment postTable">
+                                        <p>
+                                            <%= content.comment %>
+                                        </p>
+                                        <div class="name">@<%= content.name %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                </hr>
+                                <% }); %>
+
+                        </div>
+                        <div id="logout">
+                            <a href="/logout">
+                                <div class="logout">
+                                    Logout
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+
+            <footer>
+                <ul>
+                    <li class="footer-click" id="1"><a class="navigator-click" href="#intro">..</a></li>
+                    <li class="footer" id="2"><a class="navigator" href="#skills">..</a></li>
+                    <li class="footer" id="3"><a class="navigator" href="#projects">..</a></li>
+                </ul>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="/js/main.js"></script>
+            <script type="module" src="/js/popUp.js"></script>
+            <script src="/js/phone.js" media="media screen and (max-width: 630px)"></script>
+            <!-- <script src="/js/date.js"></script> -->
+</body>
+
+</html>
