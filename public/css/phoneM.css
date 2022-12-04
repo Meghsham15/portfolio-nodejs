@@ -282,8 +282,9 @@ footer {
     z-index: 2;
     font-size: 75px;
     position: absolute;
-    top: 120px;
-    right: 208px;
+    top: 110px;
+    width: 60px;
+    right: 10%;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
