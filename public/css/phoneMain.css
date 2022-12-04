@@ -68,9 +68,9 @@
     margin: 9vw 0vw;
 }
 .introInner .img {
-    height: 60vw;
+    height: 70vw;
     margin: 10vw 0vw;
-    width: 60vw;
+    width: 55vw;
 }
 .introInner {
     flex-direction: column;
@@ -268,7 +268,7 @@ footer {
 
 
 .popMain {
-    height: 45%;
+    height: 55%;
     width: 94%;
     display: flex;
     flex-direction: column;
@@ -282,8 +282,8 @@ footer {
     z-index: 2;
     font-size: 75px;
     position: absolute;
-    top: 150px;
-    right: 190px;
+    top: 120px;
+    right: 208px;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
