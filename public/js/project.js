@@ -8,7 +8,7 @@ const proj = [
     },
     {
         id: 102,
-        link: "https://obscure-springs-34432.herokuapp.com/",
+        link: "https://error404-music.azurewebsites.net/",
         img: "/img/music.png",
         name: "Music Website",
         des:"In this project i have created music website which plays music produced by my friend.",
