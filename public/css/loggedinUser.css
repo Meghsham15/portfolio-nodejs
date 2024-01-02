@@ -20,7 +20,7 @@ footer {
     width: 86%;
     display: flex;
     flex-direction: column;
-    height: 40%;
+    height: 65%;
     padding: 1vw;
     align-items: center;
     overflow: hidden;
@@ -93,7 +93,7 @@ footer {
 }
 #buttons button:hover{
     transform: scale(1.1);
-    box-shadow: 1px 1px 4px 0px #008cb5, -1px -1px 4px 0px #008cb5;
+    box-shadow: 1px 1px 4px 0px #f41515, -1px -1px 4px 0px #f41515;
     color: aliceblue;
     background: black;
 }
@@ -149,10 +149,11 @@ footer {
     letter-spacing: 0.1vw;
     color: #0082a3;
     font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 0px;
 }
 #cmt h3{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1vw;
     transition: all 0.3s ease-in-out;
 }
 #cmt h3:hover{
@@ -189,4 +190,9 @@ footer {
     font-family: 'Josefin Sans', sans-serif;
     border-radius: 0.3vw;
     align-items: center;
+}
+
+.logout:hover{
+    background: black;
+    color: #f51515;
 }

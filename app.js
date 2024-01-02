@@ -63,7 +63,7 @@ passport.deserializeUser(function (user, cb) {
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_ID,
     clientSecret: process.env.GOOGLE_SECRET,
-    callbackURL: "https://meghsham-jade.azurewebsites.net/auth/google/portFolio"
+    callbackURL: "http://localhost:3000/auth/google/portFolio"
   },
   function(accessToken, refreshToken, profile, cb) {
     User.findOrCreate({ googleId: profile.id }, function (err, user) {
@@ -77,7 +77,7 @@ passport.use(new GoogleStrategy({
 passport.use(new GitHubStrategy({
     clientID: process.env.GITHUB_ID,
     clientSecret: process.env.GITHUB_SECRET,
-    callbackURL: "https://meghsham-jade.azurewebsites.net/auth/github/portFolioAzure"
+    callbackURL: "http://localhost:3000/auth/github/portFolio"
   },
   function(accessToken, refreshToken, profile, done) {
     User.findOrCreate({ githubId: profile.id }, function (err, user) {
@@ -135,7 +135,7 @@ app.get('/auth/google/portFolio',
 app.get('/auth/github',
   passport.authenticate('github', { scope: [ 'user:email' ] }));
 
-app.get('/auth/github/portFolioAzure', 
+app.get('/auth/github/portFolio', 
   passport.authenticate('github', { failureRedirect: '/login' }),
   function(req, res) {
     // Successful authentication, redirect home.
@@ -202,5 +202,5 @@ app.post("/login",function(req,res){
 });
 
 app.listen(process.env.PORT || 3000,function(){
-    console.log("Server is running at server 8000");
+    console.log("Server is running at server 3000");
 });
